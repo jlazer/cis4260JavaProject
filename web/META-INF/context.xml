@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context path="/cis4260JavaProject"/>
+<Context path="/cis4260JavaProject">
+    <Resource name="jdbc/quick_mart" type="javax.sql.DataSource" auth="Container" 
+            driverClassName="com.mysql.jdbc.Driver" 
+            url="jdbc:mysql://localhost:3307/quick_mart?autoReconnect=true" 
+            username="root" password="sesame" 
+            logAbandoned="true" 
+            removeAbandoned="true" removeAbandonedTimeout="60" 
+            maxActive="100" maxIdle="30" maxWait="10000" />
+</Context>
