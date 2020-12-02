@@ -31,8 +31,8 @@
         </sql:query>
      
     <div align="center">
-        <table border="1" cellpadding="5">
-            <caption><h2>List of products</h2></caption>
+        <table border="6px blue" cellpadding="5" style="width: 80%" border-collapse="collapse">
+            <caption><h2>List of Snacks</h2></caption>
             <tr>
                 <th>ID</th>
                 <th>Name</th>
@@ -43,7 +43,7 @@
                 <tr>
                     <td><c:out value="${product.productNumber}" /></td>
                     <td><c:out value="${product.name}" /></td>
-                    <td><c:out value="${product.price}" /></td>
+                    <td><c:out value="$ ${product.price}" /></td>
                     <td><c:out value="${product.details}" /></td>
                 </tr>
             </c:forEach>
