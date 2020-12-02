@@ -26,6 +26,7 @@
             <li><a href="<c:url value='/index.jsp'/>">
                     Home</a></li>
             <li><a href="<c:url value='/products/index.jsp'/>">Products</a></li>
-           
+            <li><a href="<c:url value='/cart/index.jsp'/>">Shopping Cart</a></li>
+            
         </ul>
     </nav>

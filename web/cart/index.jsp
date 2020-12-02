@@ -1,23 +1,18 @@
 <%-- 
     Document   : index
-    Created on : Nov 5, 2020, 2:56:14 PM
-    Author     : justinLazarski
+    Created on : Dec 1, 2020, 10:19:55 PM
+    Author     : Justin Lazarski
 --%>
 <jsp:include page="/includes/header.jsp" />
-
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>QuickMart</title>
+        <title>Shopping Cart</title>
     </head>
     <body>
-        <div><h1>Welcome to Quick Mart!</h1></div>
-        
-        
-      
+        <h1>Shopping Cart</h1>
         
     </body>
 </html>
