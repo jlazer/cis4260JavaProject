@@ -37,6 +37,7 @@
                 <th>Product Number</th>
                 <th>Name</th>
                 <th>Price</th>
+                <th>&nbsp;</th>
                 
             </tr>
             <c:forEach var="product" items="${list_Products.rows}">
@@ -44,6 +45,12 @@
                     <td><c:out value="${product.productNumber}" /></td>
                     <td><c:out value="${product.name}" /></td>
                     <td>$<c:out value="${product.price}" />  </td>
+                    <td><form action="cart" method="post">
+                    <input type="hidden" name="productCode" 
+                           value="${product.productID}">
+                    <input type="submit" 
+                           value="Add To Cart">
+                </form></td>
                     
                 </tr>
             </c:forEach>
