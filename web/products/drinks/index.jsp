@@ -31,7 +31,7 @@
         </sql:query>
      
     <div align="center">
-        <table border="6px blue" cellpadding="5" style="width: 80%" border-collapse="collapse">
+        <table class="sortable" border="6px blue" cellpadding="5" style="width: 80%" border-collapse="collapse">
             <caption><h2>List of Drinks</h2></caption>
             <tr>
                 <th>Product Number</th>
