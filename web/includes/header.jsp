@@ -16,7 +16,7 @@
 <body>
 
     <header>
-        <img src="<c:url value='/images/logo.jpg'/>" 
+        <img class="d-block mx-auto mb-4" src="<c:url value='/images/logo1.png'/>" 
              alt="Fresh Corn Records Logo" width="58">
         <h1>QuickMart</h1>
         <h2>The best stuff around!</h2>
