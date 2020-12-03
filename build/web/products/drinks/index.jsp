@@ -45,12 +45,13 @@
                     <td><c:out value="${product.productNumber}" /></td>
                     <td><c:out value="${product.name}" /></td>
                     <td>$<c:out value="${product.price}" />  </td>
-                    <td><form action="cart" method="post">
-                    <input type="hidden" name="productCode" 
-                           value="${product.productID}">
+                    <td><form action="<c:url value='/order/addItem'/>" method="post">    
+                    <input type="hidden" name="productNumber" 
+                           value="${product.productNumber}">
                     <input type="submit" 
                            value="Add To Cart">
                 </form></td>
+                
                     
                 </tr>
             </c:forEach>

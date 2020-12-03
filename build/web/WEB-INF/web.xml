@@ -5,57 +5,20 @@
         <servlet-class>murach.sql.SqlGatewayServlet</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>cart</servlet-name>
-        <servlet-class>quickmart.business.cart</servlet-class>
+        <servlet-name>OrderController</servlet-name>
+        <servlet-class>quickmart.controllers.OrderController</servlet-class>
     </servlet>
-    <servlet>
-        <servlet-name>LineItem</servlet-name>
-        <servlet-class>quickmart.business.LineItem</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>Product</servlet-name>
-        <servlet-class>quickmart.business.Product</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>CartServlet</servlet-name>
-        <servlet-class>quickmart.cart.CartServlet</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>ProductIO</servlet-name>
-        <servlet-class>quickmart.data.ProductIO</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>CartContextListener</servlet-name>
-        <servlet-class>quickmart.util.CartContextListener</servlet-class>
-    </servlet>
+   
+    <servlet-mapping>
+        <servlet-name>OrderController</servlet-name>
+        <url-pattern>/Order/*</url-pattern>
+    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>SqlGatewayServlet</servlet-name>
-        <url-pattern>/sqlGateway</url-pattern>
+        <url-pattern>/sqlGateway/</url-pattern>
     </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>cart</servlet-name>
-        <url-pattern>/cart</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>LineItem</servlet-name>
-        <url-pattern>/LineItem</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>Product</servlet-name>
-        <url-pattern>/Product</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>CartServlet</servlet-name>
-        <url-pattern>/CartServlet</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>ProductIO</servlet-name>
-        <url-pattern>/ProductIO</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>CartContextListener</servlet-name>
-        <url-pattern>/CartContextListener</url-pattern>
-    </servlet-mapping>
+    
+    
     <session-config>
         <session-timeout>
             30
