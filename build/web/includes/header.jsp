@@ -16,17 +16,40 @@
 <body>
 
     <header>
-        <img src="<c:url value='/images/logo.jpg'/>" 
-             alt="Fresh Corn Records Logo" width="58">
-        <h1>QuickMart</h1>
-        <h2>The best stuff around!</h2>
+       <nav class="navbar navbar-expand navbar-dark bg-success">
+            <div>
+                <img class=" navbar-brand d-none d-sm-block mr-4 order-lg-1" src="<c:url value='/images/logo1.png'/>"> </div>
+                <div class="navbar-brand" ><a class="navbar-brand" href="#"><h1>QuickMart</h1></a>
+                <h6>The best stuff around!&#8482;</h6>
+            </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExample02">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="<c:url value='/index.jsp'/>">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<c:url value='/products/index.jsp'/>">Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<c:url value='/cart/index.jsp'/>">Cart</a>
+      </li>
+    </ul>
+   
+  </div>
+ </nav>
     </header>
+<!-- old nav header!        
     <nav id="nav_bar">
         <ul>
-            <li><a href="<c:url value='/index.jsp'/>">
+            <li><a href="<c :url value='/index.jsp'/>">
                     Home</a></li>
-            <li><a href="<c:url value='/products/index.jsp'/>">Products</a></li>
-            <li><a href="<c:url value='/cart/index.jsp'/>">Shopping Cart</a></li>
+            <li><a href="<c :url value='/products/index.jsp'/>">Products</a></li>
+            <li><a href="<c :url value='/cart/index.jsp'/>">Shopping Cart</a></li>
             
         </ul>
-    </nav>
+    </nav> -->
+            
